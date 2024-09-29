@@ -346,15 +346,14 @@ export default function HomePage() {
               size="icon"
               onClick={(e) => {
                 e.preventDefault();
-                handleRSVP(event.id);..
+                handleRSVP(event.id);
               }}
               disabled={rsvpedEvents.includes(event.id)}
               className={`transition-all p-2 duration-300 ${
                 rsvpedEvents.includes(event.id)
                   ? "bg-green-500 text-white hover:bg-green-600"
                   : "bg-primary text-primary-foreground hover:bg-primary/90"
-              }`}
-            >
+              }`}>
               {rsvpedEvents.includes(event.id) ? (
                 <>
                   <Check className="mr-4 h-8 w-8" />
